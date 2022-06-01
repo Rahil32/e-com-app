@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Skeleton from "react-loading-skeleton";
+import { useParams } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Products = () => {
   const [data, setData] = useState([]);
@@ -27,20 +28,9 @@ const Products = () => {
 
   const Loading = () => {
     return (
-      <>
-        <div className="col-md-3">
-          <Skeleton height={350} />
-        </div>
-        <div className="col-md-3">
-          <Skeleton height={350} />
-        </div>
-        <div className="col-md-3">
-          <Skeleton height={350} />
-        </div>
-        <div className="col-md-3">
-          <Skeleton height={350} />
-        </div>
-      </>
+      <div className="text-light">
+        Loading....
+      </div>
     );
   };
 
@@ -54,25 +44,25 @@ const Products = () => {
       <>
         <div className="buttons d-flex justify-content-center mb-5 pb-5">
           <button
-            className="btn btn-outline-light me-2"
+            className="btn btn-outline-light me-4"
             onClick={() => setFilter(data)}
           >
             All
           </button>
           <button
-            className="btn btn-outline-light me-2"
+            className="btn btn-outline-light me-4"
             onClick={() => filterProduct("men's clothing")}
           >
             Men's Clothing
           </button>
           <button
-            className="btn btn-outline-light me-2"
+            className="btn btn-outline-light me-4"
             onClick={() => filterProduct("women's clothing")}
           >
-            women's Clothing
+            Women's Clothing
           </button>
           <button
-            className="btn btn-outline-light me-2"
+            className="btn btn-outline-light me-4"
             onClick={() => filterProduct("jewelery")}
           >
             Jewelery{" "}
