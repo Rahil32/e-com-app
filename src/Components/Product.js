@@ -18,7 +18,7 @@ const Product = () => {
   }, []);
 
   const Showloading = () => {
-    return <div className="text-dark">Loading....</div>;
+    return <div className="text-dark d-flex justify-content-center fs-3 fw-bold">Loading....</div>;
   };
 
   const ShowProducts = () => {
