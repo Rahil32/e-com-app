@@ -3,8 +3,8 @@ import Products from "./Products";
 
 const Home = () => {
   return (
-    <div className="hero bg-dark">
-      <div className="card bg-dark text-white border-0">
+    <div className="hero bg-white">
+      <div className="card bg-light text-white border-0">
         <img
           src="/assets/puff.jpg"
           className="card-img"

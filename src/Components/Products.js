@@ -27,7 +27,7 @@ const Products = () => {
 
   const Showloading = () => {
     return (
-        <div className="text-light">
+        <div className="text-dark">
           Loading....
         </div>
     );
