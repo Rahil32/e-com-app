@@ -41,36 +41,36 @@ const Products = () => {
   const ShowProducts = () => {
     return (
       <>
-        <div className="buttons d-flex justify-content-center mb-5 pb-5 bg-dark fs-3 fw-bold">
+        <div className="buttons d-flex justify-content-center mb-5 pb-5 bg-white fs-3 fw-bold">
           <button
-            className="btn btn-outline-light me-2"
+            className="btn btn-outline-dark me-2"
             onClick={() => setFilter(data)}
           >
             All
           </button>
           <button
-            className="btn btn-outline-light me-2"
+            className="btn btn-outline-dark me-2"
             onClick={() => filterProduct("men's clothing")}
           >
             Men's Clothing
           </button>
           <button
-            className="btn btn-outline-light me-2"
+            className="btn btn-outline-dark me-2"
             onClick={() => filterProduct("women's clothing")}
           >
             women's Clothing
           </button>
           <button
-            className="btn btn-outline-light me-2"
+            className="btn btn-outline-dark me-2"
             onClick={() => filterProduct("jewelery")}
           >
             Jewelery{" "}
           </button>
           <button
-            className="btn btn-outline-light me-2"
+            className="btn btn-outline-dark me-2"
             onClick={() => filterProduct("electronics")}
           >
-            Electronic{" "}
+            Electronics{" "}
           </button>
         </div>
         {filter.map((product) => {
@@ -103,10 +103,10 @@ const Products = () => {
   };
   return (
     <div>
-      <div className="container my-5 py-5 bg-dark">
+      <div className="container my-5 py-5 bg-white">
         <div className="row">
           <div className="col-12 mb-5">
-            <h1 className="display-6 fw-bolder text-center text-light">Current Trends</h1>
+            <h1 className="display-6 fw-bolder text-center text-dark">Current Trends</h1>
             <hr />
           </div>
         </div>
